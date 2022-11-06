@@ -16,16 +16,16 @@ const client = new Client({intents});
 client.login(token);
 
 client.on("messageCreate", (message) => {
-    if (message.content.startsWith("MM:") === false || message.content.endsWith("?") === false) {
+    if (! message.content.startsWith("MM:") || ! message.content.endsWith("?")) {
         return;
     }
 
     fetch("https://yesno.wtf/api")
-    .then((response) => response.json())
-    .then((response) => {
-        message.reply({
-            content: response.answer,
-            files: [response.image]
-        });
+        .then((response) => response.json())
+        .then((response) => {
+            message.reply({
+                content: response.answer,
+                files: [response.image]
+            });
     });
 });
