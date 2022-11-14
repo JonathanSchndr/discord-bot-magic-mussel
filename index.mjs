@@ -1,3 +1,4 @@
+import fetch from "node-fetch";
 import * as dotenv from "dotenv";
 import discord from "discord.js";
 
