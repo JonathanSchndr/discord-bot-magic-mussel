@@ -17,7 +17,7 @@
 8. go back and copy the client secret from the bot page
 9. create an .env with DISCORD_BOT_TOKEN=%YOUR_CLIENT_SECRET% from the page
 10. create an .env with DISCORD_SERVER_ID=%YOUR_SERVER_ID% from the Discord server
-11. execute `npm install
+11. execute `npm install`
 12. start the bot with `npm run start`.
 
 Important: If you run this locally on your computer, the bot will only work as long as your computer is running. Alternatively, you must run this bot on an external server.
